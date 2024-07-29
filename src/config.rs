@@ -165,7 +165,7 @@ pub struct RendererConfig {
 
 impl RendererConfig {
     fn default_header() -> String {
-        "use super::output::*;
+        "use super::datastore::*;
         use async_graphql::*;".to_string()
     }
 
