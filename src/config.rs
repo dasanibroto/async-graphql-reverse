@@ -165,7 +165,8 @@ pub struct RendererConfig {
 
 impl RendererConfig {
     fn default_header() -> String {
-        "use async_graphql::*; use crate::datasource::DataSource;".to_string()
+        "use super::output::*;
+        use async_graphql::*;".to_string()
     }
 
     fn default_data_source_fetch_method_from_ctx() -> String {

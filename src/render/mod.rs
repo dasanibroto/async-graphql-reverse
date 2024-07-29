@@ -267,7 +267,8 @@ fn datasource_mod_file(
     let mut dest_file = BufWriter::new(dest_file);
 
     let header = quote! {
-         use async_graphql::*;
+        use super::output::*;
+        use async_graphql::*;
     };
     dest_file.write(header.to_string().as_bytes())?;
 
